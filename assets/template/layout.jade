@@ -1,0 +1,28 @@
+doctype html
+html(lang="ru-RU")
+    head
+        meta(charset='UTF-8')
+        meta(http-equiv='X-UA-Compatible' content='IE=edge')
+        meta(description='')
+        meta(keywords='')
+        meta(author='')
+        title
+            block title
+        link(rel='shortcut icon' type='image/x-icon' href='./favicon.ico')
+        link(rel='stylesheet' type='text/css' href='./css/normalize.css')
+        link(rel='stylesheet' type='text/css' href='./css/main.css')
+        script(src='./js/vendor/modernizr/modernizr.js')
+    body
+        .wrapper
+
+            include ./_common/_header
+            main
+                block content
+                
+        include ./_common/_footer
+        
+        //JS
+        script(src='//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js')
+        script.
+            window.jQuery || document.write('<script src="js/vendor/jquery/jquery.min.js"><\/script>')
+        script(src='js/main.js')
